@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Converter</title>
+	<link rel="stylesheet" href="styles.css"/>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Bin2Dec Converter</h1>
+
+    <div class="input">
+        <label>&ensp;Binary:</label>
+        <input id="binary-input" onclick="changed('binary')"></textarea>
+    </div>
+    <div class="input">
+        <label>Decimal:</label>
+        <input id="decimal-input" onclick="changed('decimal')"></textarea>
+    </div>
+
+    <button class="no-select" onclick="convert()">Convert</button>
+    <span id="help-text"></span>
+</body>
+</html>
