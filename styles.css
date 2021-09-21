@@ -3,11 +3,12 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #444;
     color: #4ae742;    
+}
+
+header {
+    width: 100%;
     text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
@@ -19,18 +20,83 @@ input {
 
 label {
     align-self: center;
+    width: 60px;
+    margin: 10px;
+    text-align: end;
 }
 
 button {
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px;
     box-shadow: 1px 2px 2px black;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 button:hover{
 	background-color: lightgray;
     cursor: pointer;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 25px;
+    color: black;
+    display: none;
+}
+
+tbody {
+    background-color: lightgrey;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: darkgray;
+    font-size: 16px;
+    text-align: center;
+}
+
+tr {
+    padding: 5px;
+    height: 32px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#interface {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4ae742;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+#saved-values {
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #help-text {
@@ -40,6 +106,9 @@ button:hover{
 }
 
 .input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 20px;
     text-align: start;
 }
