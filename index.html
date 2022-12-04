@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary Converter</title>
+
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
 	<link rel="stylesheet" href="styles.css"/>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -16,25 +19,24 @@
 
     <div id="interface">
         <div id="converter">
-            <div class="input">
+            <div class="input-section">
                 <label>Binary:</label>
-                <input id="binary-input" onclick="changed('binary')">
+                <input id="binary-input" onclick="inputChangedTo('binary')">
             </div>
-            <div class="input">
+            <div class="input-section">
                 <label>Decimal:</label>
-                <input id="decimal-input" onclick="changed('decimal')">
+                <input id="decimal-input" onclick="inputChangedTo('decimal')">
             </div>
-            
-            <div id="buttons">
-                <button class="no-select" onclick="convert()">Convert</button>
-                <button class="no-select" onclick="save()">Save</button>
-            </div>
+
+            <button class="no-select" onclick="save()">Save</button>
+
             <span id="help-text"></span>
         </div>
-        <div id="saved-values">
+        <div id="saved-values" style="display: none;">
             <table id="saved-values-table">
                 <th>Binary</th>
                 <th>Decimal</th>
+                <th></th>
             </table>
         </div>
     </div>
